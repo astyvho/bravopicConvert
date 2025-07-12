@@ -54,6 +54,9 @@ export default function RootLayout({
         {/* 네이버 서치 사이트 확인 */}
         <meta name="naver-site-verification" content="d6ff057d950b725e2fa3332f0d42c3b1d9546034" />
         
+        {/* Google 애드센스 소유권 확인 */}
+        <meta name="google-adsense-account" content="ca-pub-6552891879490275" />
+        
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
         <script
