@@ -48,6 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-yellow-400">
       <head>
+        {/* Google Search Console 도메인 소유 확인 */}
+        <meta name="google-site-verification" content="f_yi04ke2AOQgKSmgW2C60LLIMow3yeWvahynPvZDzI" />
+        
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
         <script
