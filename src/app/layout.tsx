@@ -57,6 +57,10 @@ export default function RootLayout({
         {/* Google 애드센스 소유권 확인 */}
         <meta name="google-adsense-account" content="ca-pub-6552891879490275" />
         
+        {/* Canonical URL and RSS Feed */}
+        <link rel="canonical" href="https://bravopicconvert.com" />
+        <link rel="alternate" type="application/rss+xml" title="BravoPic Image Converter RSS Feed" href="https://bravopicconvert.com/rss.xml" />
+        
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
         <script
