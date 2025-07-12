@@ -30,6 +30,14 @@ export async function GET() {
     </item>
     
     <item>
+      <title>FAQ - BravoPic Image Converter</title>
+      <description>Frequently asked questions about BravoPic Image Converter. Find answers to common questions about image conversion.</description>
+      <link>${baseUrl}/faq</link>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+      <guid isPermaLink="false">${baseUrl}-faq</guid>
+    </item>
+    
+    <item>
       <title>Privacy Policy - BravoPic</title>
       <description>Read our privacy policy to understand how we protect your data.</description>
       <link>${baseUrl}/privacy-policy</link>

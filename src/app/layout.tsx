@@ -82,6 +82,7 @@ export default function RootLayout({
           <Link href="/" className="font-bold text-lg text-yellow-400">BravoPic Image Converter</Link>
           <div className="flex items-center gap-4 text-sm">
             <a href="/how-to-use" className="hover:underline text-yellow-400">How to Use</a>
+            <a href="/faq" className="hover:underline text-yellow-400">FAQ</a>
             <a href="/privacy-policy" className="hover:underline text-yellow-400">Privacy Policy</a>
             <a href="/terms" className="hover:underline text-yellow-400">Terms of Service</a>
           </div>
@@ -94,6 +95,7 @@ export default function RootLayout({
         <footer className="w-full text-center text-xs text-yellow-400 py-8 mt-8 border-t-0 bg-black">
           <div className="mb-2">
             <a href="/how-to-use" className="hover:underline mx-2 text-yellow-400">How to Use</a>|
+            <a href="/faq" className="hover:underline mx-2 text-yellow-400">FAQ</a>|
             <a href="/privacy-policy" className="hover:underline mx-2 text-yellow-400">Privacy Policy</a>|
             <a href="/terms" className="hover:underline mx-2 text-yellow-400">Terms of Service</a>
           </div>
