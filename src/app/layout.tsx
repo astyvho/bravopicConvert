@@ -47,6 +47,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-yellow-400">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FHSV190JZH');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} antialiased bg-yellow-400 text-black`}
       >
