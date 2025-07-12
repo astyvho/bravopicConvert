@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import TestAdBanner from "@/components/TestAdBanner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -51,6 +52,9 @@ export default function RootLayout({
         {/* Google Search Console 도메인 소유 확인 */}
         <meta name="google-site-verification" content="f_yi04ke2AOQgKSmgW2C60LLIMow3yeWvahynPvZDzI" />
         
+        {/* 네이버 서치 사이트 확인 */}
+        <meta name="naver-site-verification" content="d6ff057d950b725e2fa3332f0d42c3b1d9546034" />
+        
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
         <script
@@ -76,9 +80,26 @@ export default function RootLayout({
             <a href="/terms" className="hover:underline text-yellow-400">Terms of Service</a>
           </div>
         </nav>
+        
+        {/* 헤더 아래 배너 광고 */}
+        <div className="w-full px-4 py-2 bg-yellow-400">
+          <TestAdBanner type="header" />
+        </div>
+        
         <main className="min-h-screen bg-yellow-400 flex flex-col items-center justify-center">
+          {/* 메인 컨텐츠 상단 광고 */}
+          <div className="w-full max-w-4xl px-4 mb-8">
+            <TestAdBanner type="content" />
+          </div>
+          
           {children}
         </main>
+        
+        {/* 푸터 위 배너 광고 */}
+        <div className="w-full px-4 py-2 bg-yellow-400">
+          <TestAdBanner type="footer" />
+        </div>
+        
         {/* 푸터 */}
         <footer className="w-full text-center text-xs text-yellow-400 py-8 mt-8 border-t-0 bg-black">
           <div className="mb-2">
