@@ -11,14 +11,14 @@ export async function GET() {
     <link>${baseUrl}</link>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${baseUrl}/rss" rel="self" type="application/rss+xml"/>
     
     <item>
       <title>Free Online Image Converter - BravoPic</title>
       <description>Convert PNG images to WebP or JPG for free, fast, and securely in your browser. Batch upload, bulk conversion, privacy protected.</description>
       <link>${baseUrl}</link>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <guid isPermaLink="false">${baseUrl}</guid>
+      <guid isPermaLink="false">${baseUrl}-home</guid>
     </item>
     
     <item>
@@ -26,7 +26,7 @@ export async function GET() {
       <description>Learn how to convert your images easily with our step-by-step guide.</description>
       <link>${baseUrl}/how-to-use</link>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <guid isPermaLink="false">${baseUrl}/how-to-use</guid>
+      <guid isPermaLink="false">${baseUrl}-how-to-use</guid>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ export async function GET() {
       <description>Read our privacy policy to understand how we protect your data.</description>
       <link>${baseUrl}/privacy-policy</link>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <guid isPermaLink="false">${baseUrl}/privacy-policy</guid>
+      <guid isPermaLink="false">${baseUrl}-privacy</guid>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ export async function GET() {
       <description>Read our terms of service for using BravoPic Image Converter.</description>
       <link>${baseUrl}/terms</link>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <guid isPermaLink="false">${baseUrl}/terms</guid>
+      <guid isPermaLink="false">${baseUrl}-terms</guid>
     </item>
   </channel>
 </rss>`
@@ -50,6 +50,7 @@ export async function GET() {
   return new NextResponse(rssXml, {
     headers: {
       'Content-Type': 'application/rss+xml; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600', // 1시간 캐시
     },
   })
 } 

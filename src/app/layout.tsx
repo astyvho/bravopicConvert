@@ -59,7 +59,7 @@ export default function RootLayout({
         
         {/* Canonical URL and RSS Feed */}
         <link rel="canonical" href="https://bravopicconvert.com" />
-        <link rel="alternate" type="application/rss+xml" title="BravoPic Image Converter RSS Feed" href="https://bravopicconvert.com/rss.xml" />
+        <link rel="alternate" type="application/rss+xml" title="BravoPic Image Converter RSS Feed" href="https://bravopicconvert.com/feed.xml" />
         
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHSV190JZH"></script>
