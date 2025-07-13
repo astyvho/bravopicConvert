@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bravopicconvert.com' // 실제 도메인으로 변경 필요
+  const baseUrl = 'https://bravopic.com' // 실제 도메인으로 변경 필요
   
   return [
     {
